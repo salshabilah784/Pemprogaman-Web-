@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form pemesanan pizza</title>
+</head>
+<body>
+    <h1>Black Goose Bistro | Pizza-On-Demand</h1>
+    <P>Our 12"wood-fired pizzas are avaible for delivery.Build your custom pizza and we`ll deliver it within an hour.</P>
+    <hr>
+    <form method="GET" action="regitrasi.php">
+        <table>
+            <thead>
+            <tr>
+                <th>Your Information</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><label for="name">Name</label></td>
+                    <td>: <input type="text" id="name"></td>
+                </tr>
+                <tr>
+                    <td><label for="addres">Alamat</label></td>
+                    <td>: <input type="text" id="addres"></td>
+                </tr>
+                <tr>
+                    <td><label for="hp">No.Handphone</label></td>
+                    <td>: <input type="number" id="hp"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td>: <input type="email" id="email"></td>
+                </tr>
+                <tr>
+                    <td><label for="deskripsi">Deliver Instuction</label></td>
+                    <td>: <textarea type="deskripsi" id="deskripsi"></textarea></td>
+                </tr>
+                
+            </tbody>
+        </table>
+        <fieldset>
+            <legend>Design your Dream Pizza</legend>
+            <h4>Crust (Choose one):</h4>
+            <ul style="list-style-type: none;">
+                <li>
+                    <input type="radio" id="classic" name="crust">
+                    <label for="classic">Classic White</label>
+                </li>
+                <li>
+                    <input type="radio" id="multigrain" name="crust">
+                    <label for="multigrain">Multigrain</label>
+                </li>
+                <li>
+                    <input type="radio" id="una" name="crust">
+                    <label for="una">Una Melt</label>
+                </li>
+                <li>
+                    <input type="radio" id="chessy" name="crust">
+                    <label for="chessy">Chessy Galore</label>
+                </li>
+                <li>
+                    <input type="radio" id="meat" name="crust">
+                    <label for="meat">Meat Lovers</label>
+                </li>
+            </ul>
+            <h4>Topping (choose as many as you want):</h4>
+            <ul style="list-style-type: none;">
+                <li>
+                    <input type="checkbox" id="white" >
+                    <label for="white">white sauce</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="mozzarella" >
+                    <label for="mozzarella">mozzarella cheese</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="pepperoni" >
+                    <label for="pepperoni">pepperoni</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="mushrooms" >
+                    <label for="mushrooms">mushrooms</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="pappers" >
+                    <label for="pappers">pappers</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="anchor" >
+                    <label for="anchor">anchories</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="pineapple" >
+                    <label for="pineapple">pineapple</label>
+                </li>
+            </ul>
+        </fieldset>
+        <h4>Number</h4>
+        <label for="count">how manny pizza</label>
+        <input type="number" id="count">
+        <br>
+        <br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
