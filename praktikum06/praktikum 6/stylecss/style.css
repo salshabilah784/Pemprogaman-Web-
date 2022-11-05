@@ -1,0 +1,59 @@
+body {
+    background-color: #82b1ff;
+}
+img {
+    width:20%;
+}
+#header {
+    text-align: center;
+    background-color:#49a7cc ;
+    border-radius: 10px; 
+}
+#soekarno {
+    text-decoration: underline;
+    font-weight: bolder;
+}
+.image {
+    text-align: center;
+    width:max-content;
+}
+.isi {
+    background-color: #aec4c7;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+}
+.jawa {
+    font-style: italic;
+    font-weight: bold;
+}
+#profil {
+    background-color: #aec4c7;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 10px;
+}
+#beternak {
+    background-color: #aec4c7;
+    border-radius: 10px;
+    font-family:'Times New Roman', Times, serif;
+}
+.gambar {
+    background-color: #aec4c7;
+    border-radius: 15px;
+    text-align: center;
+    width:max-content;
+}
+.promo {
+    background-color: #aec4c7;
+    border-radius: 10px;
+    width: auto;
+    margin-left: 30%;
+    margin-right: 32%;
+}
+.sosmed {
+   background-color: green;
+   padding:10px;
+    border-radius: 10px;
+    color:black;
+    width: max-content;
+    border: 2px solid black;
+}
