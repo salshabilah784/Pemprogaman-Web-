@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tugas 9</title>
+</head>
+<body>
+    
+    <input type="text" id="nilaiPertama">
+        <h3><span class="pertambahan">+</span></h3>
+    <input type="text" id="nilaiKedua" onchange="hasil_penjumlahan()">
+    <br>
+    <br>
+        <button type="button"><h3><span class="Sama dengan">=</span></h3></button>
+    <br>
+    <br>
+    <input type="text" id="hasil">
+
+    <script>
+        function hasil_penjumlahan() {
+            penampung = parseInt(nilaiPertama.value) + parseInt(nilaiKedua.value)
+            hasil.value = penampung
+       } 
+    </script>
+
+
+</body>
