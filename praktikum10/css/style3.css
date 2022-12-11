@@ -1,0 +1,64 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-size: 1.2em;
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.navbar {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    height: 10vh;
+}
+ul{
+    display: flex;
+    list-style: none;
+}
+a {
+    width: 100%;
+    text-decoration: none;
+    color: black;
+    padding: 1em;
+    border-radius: 2em;
+}
+a:hover {
+    background-image: linear-gradient(rgb(145, 255, 151), rgb(252, 252, 252));        
+}
+.persegi {
+    margin-left: 27%;
+    border: 2px solid grey;
+    background-color: lightblue;
+    width: 45%;
+}
+.kotak {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 20%;
+}
+.bungkusan {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    margin: 10px;
+    background-color: beige;
+    border-radius: 20px;
+}
+hr {
+    background-color: royalblue;
+    height: 1px;
+}
+.Send {
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+button {
+    width: 15%;
+}

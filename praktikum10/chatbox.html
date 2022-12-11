@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbox</title>
+    <link rel="stylesheet" href="css/style3.css">
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <ul>
+                <li><a href="login.html">Nomor 1</a></li>
+                <li><a href="kursmatauang.html">Nomor 2</a></li>
+                <li><a href="chatbox.html">Nomor 3</a></li>
+                <li><a href="img-picker.html">Nomor 4</a></li>
+                <li><a href="form-validation.html">Nomor 5</a></li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+    <div class="persegi" id="persegi">
+        <div class="kotak" id="kotak">
+            <div class="bungkusan">
+                <p style="text-align: center;font-weight: bold;">Salsha Bilah</p>
+                <hr>
+            </div>      
+        </div>
+        <div class="Send">
+            <input id="masukan" type="text" value="" size="60"  onchange="percakapan()">
+            <button onclick="percakapan()">Send</button>
+        </div>
+    </div>
+    <br>
+    <script>
+        function percakapan(){
+            const kotak= document.getElementById("kotak");
+            const inputan = document.getElementById("masukan").value;
+            if(inputan.trim() != ""){
+                kotak.innerHTML += `<div class="bungkusan"> <p>` + inputan.trim() + `</p> </div>`
+                masukan.value = "";
+            }
+        }
+    </script>
+</body>
+</html>

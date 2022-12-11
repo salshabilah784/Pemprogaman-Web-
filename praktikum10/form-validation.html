@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation</title>
+    <link rel="stylesheet" href="css/style5.css">
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <ul>
+                <li><a href="login.html">Nomor 1</a></li>
+                <li><a href="kursmatauang.html">Nomor 2</a></li>
+                <li><a href="chatbox.html">Nomor 3</a></li>
+                <li><a href="img-picker.html">Nomor 4</a></li>
+                <li><a href="form-validation.html">Nomor 5</a></li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+    <div class="container">
+        <div class="main">
+            <label for="username">Nama pelanggan</label>
+            <input type="text" id="usernama">
+            <label for="Email">Email</label>
+            <input type="email" id="email">
+            <label for="time">Jam keberangkatan</label>
+            <input type="time" id="datetime">
+            <label for="tujuan">Tujuan keberangkatan</label>
+            <input type="text" id="tujuan keberangkatan">
+            <label for="number">Jumlah tiket</label>
+            <input type="number" id="number">
+            <br>
+            <button type="button" onclick="pemesanan()">Pesan tiket</button>
+        </div>
+    </div>
+
+    <script>
+        function pemesanan(){
+            let nama = document.getElementById("usename").value;
+            let p = document.getElementById("usenama");
+
+            let email = document.getElementById("email1").value;
+            let p1 = document.getElementById("imel");
+
+            let jam = document.getElementById("jam").value;
+            let p2 = document.getElementById("jamm");
+
+            let tujuan = document.getElementById("tujuan").value;
+            let p3 = document.getElementById("tjn");
+
+            let tiket = document.getElementById("tiket").value;
+            let p4 = document.getElementById("tkt");
+
+            if(nama == ""){
+                alert("Nama Wajib Di Isi!!")
+            }else if(nama.length > 30){
+                alert("Nama Tidak Valid / Maksimum 30 Karakter!!")
+            }else{
+                p.innerHTML = `<p></p>`;
+            }
+
+            if(email == ""){
+                alert("Email Wajib Di Isi!!")
+            }else if(email.length <= 9 || email == "@gmail.com"){
+                alert("Email Tidak Valid!!")
+            }else{
+                p1.innerHTML = `<p></p>`;
+            }
+
+            if(jam == ""){
+                alert("Jam Keberangkatan Wajib Diisi!!")
+            }else{
+                p2.innerHTML = `<p></p>`
+            }
+            
+            if(tujuan == ""){
+                alert("Tujuan Keberangkatan Wajib Di Isi!!")
+            }else{
+                p3.innerHTML = `<p></p>`
+            }
+
+            if(tiket == "" || tiket <= 0){
+                alert("Pembelian Tiket Minimal 1 Tiket Dan Maximal 10 Tiket!!")
+            }else if(tiket > 10){
+                alert("Maximum Pembelian 10 Tiket!!")
+            }else{
+                p4.innerHTML = `<p></p>`
+            }
+        }
+    </script>
+</body>
+</html>
+</body>
+</html>
